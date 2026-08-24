@@ -21,10 +21,10 @@ section, header {
 
 #header{
     width: 100%;
-    min-height: 80vh;
+    min-height: 85vh;
     background-image: url('images/back5.png');
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     position: relative;
 }
 
@@ -863,6 +863,7 @@ h1 span{
     gap: 22px;
     max-width: 900px;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 .certification-card {
@@ -875,6 +876,7 @@ h1 span{
     display: flex;
     align-items: flex-start;
     gap: 16px;
+    height: 100%;
 }
 
 .certification-card:hover {
@@ -896,6 +898,7 @@ h1 span{
     font-size: 22px;
     flex-shrink: 0;
     transition: all 0.3s ease;
+    margin-top: 2px;
 }
 
 .certification-card:hover .cert-icon-wrapper {
@@ -905,14 +908,19 @@ h1 span{
 
 .cert-info {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
 }
 
 .cert-info h3 {
-    font-size: 16px;
+    font-size: 15.5px;
     font-weight: 600;
     color: #ffffff;
     line-height: 1.45;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    min-height: 44px;
 }
 
 .cert-tag {
@@ -924,6 +932,7 @@ h1 span{
     font-size: 12px;
     font-weight: 500;
     display: inline-block;
+    align-self: flex-start;
 }
 
 /* CONTACT ME */

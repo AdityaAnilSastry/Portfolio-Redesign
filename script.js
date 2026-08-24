@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Dynamic typing text effect
     const textArray = [
-        "Data Engineer Apprentice",
-        "M.Tech CSE @ IIT Jammu",
-        "Full-Stack Developer"
+        "M.Tech CSE @ IIT Jammu"
     ];
     let index = 0;
     const spanElement = document.getElementById("typedText");
