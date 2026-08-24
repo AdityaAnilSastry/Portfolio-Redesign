@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('portfolio-theme');
+            if (savedTheme === 'light') {
+                document.documentElement.classList.add('light-theme');
+            }
+        })();
+    </script>
 </head>
 <body>
     <!-- HEADER / HERO -->
@@ -17,32 +25,38 @@
         <div class="container">
             <div id="nav-bar">
                 <nav class="navi">
-                    <h1 class="logo" style="font-size: 30px;"><a href="#header" style="color: white; text-decoration: none;"><span>A</span>DITYA <span>.</span></a></h1>
-                    <ul>
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#leadership">Leadership</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <h1 class="logo"><a href="#header" class="logo-link"><span>A</span>DITYA <span>.</span></a></h1>
+                    <ul id="nav-menu">
+                        <li><a href="#header" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#education" class="nav-link">Education</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#leadership" class="nav-link">Leadership</a></li>
+                        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
+                    <div class="nav-actions">
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark mode" title="Toggle theme">
+                            <i class="fa-solid fa-sun" id="theme-icon"></i>
+                        </button>
+                        <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                            <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+                        </button>
+                    </div>
                 </nav>
             </div>
             <div class="header-text">
                 <h1>Hi, I'm <span>Aditya Anil Sastry</span></h1>
-                <br>
                 <div class="typing-text" id="typingText">
                     <span id="typedText"></span>
                     <span class="cursor">&nbsp;</span>
                 </div>
-                <br>
                 <div class="header-social-links">
-                    <a href="https://www.linkedin.com/in/aditya-anil-sastry-244346251/" target="_blank" rel="noopener noreferrer"><img src="images/linkdin.png" alt="LinkedIn"></a>
-                    <a href="https://github.com/AdityaAnilSastry" target="_blank" rel="noopener noreferrer"><img src="images/github2.png" alt="GitHub"></a>
-                    <a href="https://twitter.com/AdityaSast92852" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/in/aditya-anil-sastry-244346251/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><img src="images/linkdin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/AdityaAnilSastry" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><img src="images/github2.png" alt="GitHub"></a>
+                    <a href="https://twitter.com/AdityaSast92852" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><img src="images/twitter.png" alt="Twitter"></a>
                 </div>
             </div>
         </div>
