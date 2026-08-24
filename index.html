@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Portfolio of Aditya Anil Sastry - Data Engineer Apprentice & M.Tech CSE Scholar at IIT Jammu.">
+    <title>Aditya Anil Sastry | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <div id="header">
-    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-    <div id =#header>
+    <!-- HEADER / HERO -->
+    <header id="header">
         <div class="container">
             <div id="nav-bar">
                 <nav class="navi">
-                    <!-- <img src="images/logo.jpg" class="logo"> -->
-                    <h1 class="logo" style="font-size: 30px;"><span>A</span>DITYA <span>.</span></h1>
+                    <h1 class="logo" style="font-size: 30px;"><a href="#header" style="color: white; text-decoration: none;"><span>A</span>DITYA <span>.</span></a></h1>
                     <ul>
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -23,11 +25,10 @@
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#leadership">Leadership</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <!-- <br> -->
-
-
                 </nav>
             </div>
             <div class="header-text">
@@ -38,214 +39,490 @@
                     <span class="cursor">&nbsp;</span>
                 </div>
                 <br>
-                <a href="https://www.linkedin.com/in/aditya-anil-sastry-244346251/" target="_main"><img src="images/linkdin.png" alt=""></a>
-                <a href="https://github.com/AdityaAnilSastry" target="_main"><img src="images/github2.png"></a>
-                <a href="https://twitter.com/AdityaSast92852" target="_main"><img src="images/twitter.png"></a>
-
+                <div class="header-social-links">
+                    <a href="https://www.linkedin.com/in/aditya-anil-sastry-244346251/" target="_blank" rel="noopener noreferrer"><img src="images/linkdin.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/AdityaAnilSastry" target="_blank" rel="noopener noreferrer"><img src="images/github2.png" alt="GitHub"></a>
+                    <a href="https://twitter.com/AdityaSast92852" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png" alt="Twitter"></a>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- ABOUT -->
-
-    <div id="about">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="about-column-1">
-                    <img src="images/icon.jpg" id="icon">
+                    <img src="images/icon.jpg" id="icon" alt="Aditya Anil Sastry">
                 </div>
                 <div class="about-column-2">
                     <h1 class="sub-title">About <span>Me</span></h1>
                     <br>
-                    <h5 style="color: white; line-height: 1.5; text-shadow: 2px 2px 4px black;">In addition to my academic pursuit of a degree in Computer 
-                        Science and Engineering at the Indian Institute of Technology (IIT) Jammu, I'm actively 
-                        delving into the world of AI/ML, eager to contribute 
-                        to innovative projects in this domain. I'm passionate about coding and exploring the 
-                        intricacies of computer systems. In my free time, I enjoy swimming 
-                        and playing football.</h5>
-                    
+                    <p class="about-desc">
+                        I am an <strong>M.Tech Computer Science and Engineering</strong> scholar at the <strong>Indian Institute of Technology (IIT) Jammu</strong>, with a Bachelor of Engineering in Information Science and Engineering from <strong>BMS Institute of Technology & Management</strong> (CGPA: 8.98).
+                    </p>
+                    <p class="about-desc">
+                        With professional experience as a <strong>Data Engineer Apprentice at Target</strong>, I specialize in architecting scalable ETL pipelines, distributed data processing with <strong>Apache Spark</strong> and <strong>Scala</strong>, cloud data warehousing on <strong>Google Cloud Platform (GCP)</strong>, and developing real-time full-stack applications.
+                    </p>
+                    <p class="about-desc">
+                        I am passionate about solving complex engineering challenges across <strong>Data Engineering</strong>, <strong>Distributed Systems</strong>, and <strong>Full-Stack Development</strong>.
+                    </p>
+                    <div class="about-highlights">
+                        <span class="about-pill"><i class="fa-solid fa-graduation-cap"></i> M.Tech CSE @ IIT Jammu</span>
+                        <span class="about-pill"><i class="fa-solid fa-briefcase"></i> Ex-Data Engineer Apprentice @ Target</span>
+                        <span class="about-pill"><i class="fa-solid fa-layer-group"></i> Data Engineering & Distributed Systems</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <h1  id="my-skills" style="padding-top: 50px;"><span></span> Skills</h1>
+    </section>
 
-        <div class="container-2">
-            <div class="div-skills">
-                <img src="images/html.png" alt="">
-                <p>HTML</p>
-            </div>
-            <div class="div-skills">
-                <img src="images/css.png" alt="">
-                CSS
-            </div>
-            <div class="div-skills">
-                <img src="images/js.png" alt="">
-                JAVASCRIPT
-            </div>
-            <div class="div-skills">
-                <img src="images/python.png" alt="">
-                PYTHON
-            </div>
-            <div class="div-skills">
-                <img src="images/java.png" alt="">
-                JAVA
-            </div>
-            <div class="div-skills">
-                <img src="images/node.png" alt="">
-                NODE JS
-            </div>
-            <div class="div-skills">
-                <img src="images/sql.png" alt="">
-                SQL
-            </div>
-            <div class="div-skills">
-                <img src="images/c.png" alt="">
-                C
-            </div>
-            <div class="div-skills">
-                <img src="images/git.png" alt="">
-                GIT
-            </div>
-            <!-- <div class="div-skills"></div> -->
-        </div>
-        <h1 style="text-align: center; padding-bottom: 50px;padding-top: 50px;"><span></span> Education</h1>
-        <div class="education">
-            <div class="edu">
-                <span><img src="images/grad4.png" alt=""></span>
-                <span>  2026-2028</span>
-                <br>
-                <br>
-                <div class="edu-content">
-                    <h3>Indian Institute Of Technology (IIT), Jammu</h3>
-                    <br>
-                    <ul>
-                        <li><h4>Master of Technology In Computer Science and Engineering</h4></li>
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="container">
+            <h1 class="sub-title" style="text-align: center; padding-bottom: 40px;">Work <span>Experience</span></h1>
+            <div class="experience-list">
+                <!-- Target Corporation -->
+                <div class="experience-card featured-experience">
+                    <div class="exp-header">
+                        <div class="exp-role-title">
+                            <h3>Data Engineer Apprentice</h3>
+                            <h4 class="company-name">Target Corporation India Pvt. Ltd.</h4>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-badge"><i class="fa-regular fa-calendar"></i> February 2026 – July 2026</span>
+                            <span class="exp-badge"><i class="fa-solid fa-location-dot"></i> Bangalore, Karnataka</span>
+                        </div>
+                    </div>
+                    <ul class="exp-points">
+                        <li>Developed and maintained ETL pipelines using <strong>Apache Spark (Scala)</strong>, <strong>Hive</strong>, and <strong>HDFS</strong>, leveraging internal data ingestion, orchestration, and CI/CD tools to automate deployment and execution.</li>
+                        <li>Migrated the ETL pipeline to <strong>Google Cloud Platform (GCP)</strong> by replacing HDFS with <strong>Google Cloud Storage (GCS)</strong> and Hive with <strong>BigQuery</strong>, leveraging <strong>Dataproc</strong> to execute Spark workloads.</li>
+                        <li>Validated pipeline accuracy through comprehensive data quality checks, including source-to-target reconciliation, record count validation, null checks, and duplicate detection to ensure data integrity after transformations.</li>
+                        <li>Managed version control using <strong>Git</strong> and <strong>GitHub</strong> and containerized Spark applications with <strong>Docker</strong> to build deployment-ready JARs for production ETL workflows.</li>
                     </ul>
-                    <br>
+                    <div class="exp-tech-tags">
+                        <span class="tech-tag">Apache Spark</span>
+                        <span class="tech-tag">Scala</span>
+                        <span class="tech-tag">GCP (BigQuery, GCS, Dataproc)</span>
+                        <span class="tech-tag">Hive</span>
+                        <span class="tech-tag">HDFS</span>
+                        <span class="tech-tag">ETL Pipelines</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Git / GitHub</span>
+                    </div>
                 </div>
-            <div>
 
-
-
-
-
-            <div class="edu">
-                <span><img src="images/grad4.png" alt=""></span>
-                <span>  2022-2026</span>
-                <br>
-                <br>
-                <div class="edu-content">
-                    <h3>BMS Institute Of Technology & Management</h3>
-                    <br>
-                    <ul>
-                        <li><h4>Bachelor of Enginnering In Information Science and Engineering</h4></li>
+                <!-- Edutainer (PAT Technologies) -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-role-title">
+                            <h3>Web Development Intern</h3>
+                            <h4 class="company-name">Edutainer (PAT Technologies)</h4>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="exp-badge"><i class="fa-regular fa-calendar"></i> January 2026 – April 2026</span>
+                            <span class="exp-badge"><i class="fa-solid fa-globe"></i> Online</span>
+                        </div>
+                    </div>
+                    <ul class="exp-points">
+                        <li>Completed a structured training program covering web development, including <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, backend fundamentals, and database concepts.</li>
+                        <li>Gained hands-on experience with web applications, <strong>REST APIs</strong>, <strong>Python</strong>, <strong>SQL</strong>, and database integration through practical tasks and projects.</li>
                     </ul>
-                    <br>
+                    <div class="exp-tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Database Integration</span>
+                    </div>
                 </div>
-            <div>
-            <br>
-            <!-- <div class="line"></div> -->
-            <br>
-            <!-- <div class="edu">
-                <span><img src="images/grad4.png" alt=""></span>
-                2008-2022
-                <br>
-                <br>
-                <div class="edu-content">
-                    <h3>Sindhi High School</h3>
-                    <br>
-                    <ul>
-                        <li><h4>X</h4></li>
-                        <br>
-                            <li><h4>XII</h4></li>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <h1 class="sub-title" style="text-align: center; padding-bottom: 40px;">Technical <span>Skills</span></h1>
+            <div class="skills-grid">
+                <!-- 1. Languages -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Java</span>
+                        <span class="skill-chip">C</span>
+                        <span class="skill-chip">Python</span>
+                        <span class="skill-chip">Scala</span>
+                        <span class="skill-chip">SQL</span>
+                        <span class="skill-chip">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- 2. Data Engineering -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Data Engineering</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Apache Spark</span>
+                        <span class="skill-chip">Hive</span>
+                        <span class="skill-chip">HDFS</span>
+                        <span class="skill-chip">ETL Pipelines</span>
+                        <span class="skill-chip">Data Warehousing</span>
+                    </div>
+                </div>
+
+                <!-- 3. Cloud -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-cloud"></i>
+                        <h3>Cloud</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">GCP</span>
+                        <span class="skill-chip">BigQuery</span>
+                        <span class="skill-chip">Google Cloud Storage (GCS)</span>
+                        <span class="skill-chip">Dataproc</span>
+                    </div>
+                </div>
+
+                <!-- 4. Frontend -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-desktop"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">HTML</span>
+                        <span class="skill-chip">CSS</span>
+                    </div>
+                </div>
+
+                <!-- 5. Backend -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Node.js</span>
+                        <span class="skill-chip">Express.js</span>
+                        <span class="skill-chip">REST APIs</span>
+                        <span class="skill-chip">Socket.IO</span>
+                    </div>
+                </div>
+
+                <!-- 6. Databases -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-table"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">MySQL</span>
+                        <span class="skill-chip">PostgreSQL</span>
+                        <span class="skill-chip">MongoDB</span>
+                        <span class="skill-chip">BigQuery</span>
+                    </div>
+                </div>
+
+                <!-- 7. Tools -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Git</span>
+                        <span class="skill-chip">GitHub</span>
+                        <span class="skill-chip">Docker</span>
+                        <span class="skill-chip">GitHub Copilot</span>
+                    </div>
+                </div>
+
+                <!-- 8. Messaging -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <h3>Messaging</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip">Apache Kafka (Basics)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9. Core Coursework (Visually Secondary) -->
+            <div class="coursework-card">
+                <div class="skill-category-header">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Core Coursework</h3>
+                </div>
+                <div class="skill-chips">
+                    <span class="skill-chip secondary-chip">DBMS</span>
+                    <span class="skill-chip secondary-chip">Operating Systems</span>
+                    <span class="skill-chip secondary-chip">Data Structures</span>
+                    <span class="skill-chip secondary-chip">Algorithms</span>
+                    <span class="skill-chip secondary-chip">Object Oriented Programming (OOPs)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="container">
+            <h1 class="sub-title" style="text-align: center; padding-bottom: 40px;">Academic <span>Education</span></h1>
+            <div class="education-list">
+                <!-- IIT Jammu -->
+                <div class="education-card">
+                    <div class="edu-header">
+                        <div class="edu-title-area">
+                            <h3>Indian Institute of Technology Jammu</h3>
+                            <h4 class="degree-name">Master of Technology in Computer Science and Engineering</h4>
+                        </div>
+                        <div class="edu-meta">
+                            <span class="edu-badge"><i class="fa-regular fa-calendar"></i> 2026 – 2028</span>
+                            <span class="edu-badge"><i class="fa-solid fa-location-dot"></i> Jammu, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BMSIT&M -->
+                <div class="education-card">
+                    <div class="edu-header">
+                        <div class="edu-title-area">
+                            <h3>BMS Institute of Technology & Management</h3>
+                            <h4 class="degree-name">Bachelor of Engineering in Information Science and Engineering</h4>
+                        </div>
+                        <div class="edu-meta">
+                            <span class="edu-badge"><i class="fa-regular fa-calendar"></i> 2022 – 2026</span>
+                            <span class="edu-badge"><i class="fa-solid fa-location-dot"></i> Bangalore, Karnataka</span>
+                            <span class="edu-badge score-badge"><i class="fa-solid fa-award"></i> CGPA: 8.98</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-title" style="text-align: center; padding-bottom: 40px;">Featured <span>Projects</span></h1>
+            <div class="projects-list">
+                <!-- 1. CodeCollab -->
+                <div class="project-card featured-project">
+                    <div class="project-header">
+                        <div class="project-title-area">
+                            <h3>CodeCollab – Real-Time Collaborative Coding Platform</h3>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                        </div>
+                    </div>
+                    <ul class="project-points">
+                        <li>Developed a real-time collaborative coding platform supporting simultaneous multi-user code editing with low-latency synchronization using <strong>Socket.io</strong>.</li>
+                        <li>Integrated secure code execution and multi-language compilation through API-based services, enabling seamless development and testing within the platform.</li>
+                        <li>Implemented persistent file management and an integrated chat system to enhance collaboration and provide a complete coding workspace.</li>
                     </ul>
                 </div>
-            </div> -->
+
+                <!-- 2. Real-Time Weather Tracker -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title-area">
+                            <h3>Real-Time Weather Tracker</h3>
+                        </div>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Weather API</span>
+                        </div>
+                    </div>
+                    <ul class="project-points">
+                        <li>Built a responsive weather application that retrieves and displays real-time weather information using a weather API based on user search queries.</li>
+                        <li>Designed an intuitive user interface with dynamic weather updates, including key metrics such as temperature, humidity, wind speed, and weather conditions.</li>
+                    </ul>
+                    <div class="project-image-wrapper">
+                        <img src="images/weather.jpg" id="image2" alt="Real-Time Weather Tracker Interface Preview" class="project-img">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="projects">
-        <h1 style="text-align: center; padding-bottom: 50px;padding-top: 50px;"><span></span> Projects</h1>
-        <div class="proj">
-            <h3 style="text-align: center;">Weather Tracker</h3>
-            <br>
-            <img src="images/weather.jpg" id="image2">
-            <!-- <img src="images/cdc2.jpg" alt=""> -->
+    </section>
+
+    <!-- LEADERSHIP & ACTIVITIES -->
+    <section id="leadership">
+        <div class="container">
+            <h1 class="sub-title" style="text-align: center; padding-bottom: 40px;">Leadership & <span>Activities</span></h1>
+            <div class="leadership-grid">
+                <!-- 1. Technical Associate, E-Cell -->
+                <div class="leadership-card">
+                    <div class="lead-header">
+                        <div class="lead-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="lead-title-area">
+                            <h3>Technical Associate</h3>
+                            <h4 class="club-name">E-Cell, BMSIT&M</h4>
+                        </div>
+                        <div class="lead-meta">
+                            <span class="lead-badge"><i class="fa-regular fa-calendar"></i> May 2024 – December 2025</span>
+                        </div>
+                    </div>
+                    <ul class="lead-points">
+                        <li>Designed and maintained websites for club events, supporting event management and improving the club's digital presence.</li>
+                    </ul>
+                </div>
+
+                <!-- 2. Web Development Domain Lead, Coding Club -->
+                <div class="leadership-card">
+                    <div class="lead-header">
+                        <div class="lead-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div class="lead-title-area">
+                            <h3>Web Development Domain Lead</h3>
+                            <h4 class="club-name">Coding Club, BMSIT&M</h4>
+                        </div>
+                        <div class="lead-meta">
+                            <span class="lead-badge"><i class="fa-regular fa-calendar"></i> May 2024 – July 2025</span>
+                        </div>
+                    </div>
+                    <ul class="lead-points">
+                        <li>Shared insights on web development, engaged with students, and offered guidance to enhance their understanding and foster a collaborative learning environment.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3. Events & Volunteering -->
+            <div class="activities-card">
+                <div class="activities-header">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>Events & Volunteering</h3>
+                </div>
+                <div class="activities-content">
+                    <div class="activity-item highlight-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span><strong>Core Member</strong> of the <em>Code Red 25</em> National Level Hackathon organizing team.</span>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <span><strong>Volunteer</strong> for <em>Code Red 24</em> Hackathon.</span>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <span><strong>Volunteer</strong> for <em>Anveshana</em> Prototype Competition.</span>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <span><strong>Volunteer</strong> for <em>Startup Premier League 2.0</em>.</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br>
-        <!-- <div class="proj">
-            <h3 style="text-align: center;">Web Application For Career Development Center BMSIT</h3>
-            <br>
-            <img src="images/cdc1.jpg" id="image1">
-        </div> -->
-        <br>
-        <!-- <div class="proj">
-            <h3 style="text-align: center;">Grocery Management System</h3>
-            <br>
-            <img src="images/shop1.jpg" id="image3">
-        </div> -->
-    </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+        <div class="container">
+            <h1 class="sub-title" style="text-align: center; padding-bottom: 40px;">Professional <span>Certifications</span></h1>
+            <div class="certifications-grid">
+                <!-- 1. Full-Stack Web Dev Bootcamp -->
+                <div class="certification-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>The Complete Full-Stack Web Development Bootcamp</h3>
+                        <span class="cert-tag">Full-Stack Web Development</span>
+                    </div>
+                </div>
+
+                <!-- 2. Git Course -->
+                <div class="certification-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Git Course</h3>
+                        <span class="cert-tag">Version Control & CI/CD</span>
+                    </div>
+                </div>
+
+                <!-- 3. Core Java -->
+                <div class="certification-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Core Java</h3>
+                        <span class="cert-tag">Java Programming & OOP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACT -->
-    <div id="contact">
-        <h1 style="text-align: center; padding-bottom: 50px;padding-top: 50px;">Contact <span>Me</span></h1>
-        <div class="container-contact">
-            <div class="left">
-                <div class="contact-left">
-                    <!-- <img src="images/contactme1.png" alt=""> -->
-                    <h3>Get In Touch</h3>
-                </div>
-                <br>
-                <div class="contact-left">
-                    <img src="images/address1.png" alt="">
-                    <h4>Address:</h4>
-                </div>
-                <p>Bangalore,India-560064</p>
-                <br>
-                <div class="contact-left">
-                    <img src="images/email.png" alt="">
-                    <h4>Email:</h4>
-                </div>
-                <p>adityaanil061@gmail.com</p>
-                <br>
-                <a href="https://www.linkedin.com/in/aditya-anil-sastry-244346251/" target="_main"><img src="images/linkdin.png" alt=""></a>
-                <a href="https://github.com/AdityaAnilSastry"  target="_main"><img src="images/github2.png" alt=""></a>
-                <a href="https://twitter.com/AdityaSast92852"  target="_main"><img src="images/twitter.png" alt=""></a>
-            </div>
-            <div class="right">
-                <form name="submit-to-google-sheet" id="submit-form">
-                    <input type="text" placeholder="Your Name"  name="Name" required id="name">
-                    <input type="text" placeholder=" Your Number" name="Number" required id="number">
+    <section id="contact">
+        <div class="container">
+            <h1 style="text-align: center; padding-bottom: 50px; padding-top: 50px;">Contact <span>Me</span></h1>
+            <div class="container-contact">
+                <div class="left">
+                    <div class="contact-left">
+                        <h3>Get In Touch</h3>
+                    </div>
                     <br>
-                    <input type="text" placeholder="Your Email" name="Email" required id="email">
-                    <input type="text" placeholder="Your Subject" name="Subject" required id="subject">
+                    <div class="contact-left">
+                        <img src="images/address1.png" alt="Address icon">
+                        <h4>Address:</h4>
+                    </div>
+                    <p>Bangalore, India</p>
                     <br>
-                    <!-- <textarea name="Your Message" id="" cols="30" rows="10" id="message">Your Message</textarea> -->
-                    <!-- <input type="text" placeholder="Your Message" id="message" name="Message" required autofocus> -->
-                    <textarea name="Message" placeholder="Your Message" id="message" cols="30" rows="10"></textarea>
+                    <div class="contact-left">
+                        <img src="images/email.png" alt="Email icon">
+                        <h4>Email:</h4>
+                    </div>
+                    <p><a href="mailto:adityaanil180@gmail.com" style="color: white; text-decoration: none;">adityaanil180@gmail.com</a></p>
                     <br>
-                    <button class="btn" name="submit" id="submit-btn" onclick="clearInputs()">Send Message</button>
-                </form>
+                    <div class="contact-social-links">
+                        <a href="https://www.linkedin.com/in/aditya-anil-sastry-244346251/" target="_blank" rel="noopener noreferrer"><img src="images/linkdin.png" alt="LinkedIn"></a>
+                        <a href="https://github.com/AdityaAnilSastry" target="_blank" rel="noopener noreferrer"><img src="images/github2.png" alt="GitHub"></a>
+                        <a href="https://twitter.com/AdityaSast92852" target="_blank" rel="noopener noreferrer"><img src="images/twitter.png" alt="Twitter"></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <form name="submit-to-google-sheet" id="submit-form">
+                        <input type="text" placeholder="Your Name" name="Name" required id="name">
+                        <input type="text" placeholder="Your Number" name="Number" required id="number">
+                        <br>
+                        <input type="email" placeholder="Your Email" name="Email" required id="email">
+                        <input type="text" placeholder="Your Subject" name="Subject" required id="subject">
+                        <br>
+                        <textarea name="Message" placeholder="Your Message" id="message" cols="30" rows="10" required></textarea>
+                        <br>
+                        <button type="submit" class="btn" name="submit" id="submit-btn">Send Message</button>
+                        <div id="form-status" style="margin-top: 10px; font-size: 16px;"></div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxwEOH1NF7kLOOYK0hswxiPmTiiSJahpx-r92kXuWZRDIx16fJ2WNiBBdSMadJOF_OJ/exec'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-        function clearInputs() {
-            // document.getElementById("name").value = "";
-            // document.getElementById("number").value = "";
-            // document.getElementById("email").value = "";
-            // document.getElementById("subject").value = "";
-            // document.getElementById("message").value = "";
-        }
-      </script>
-</body>
-<script src="script.js"></script>
+    </section>
 
+    <script src="script.js"></script>
+</body>
 </html>
