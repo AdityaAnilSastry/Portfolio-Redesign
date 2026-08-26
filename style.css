@@ -252,18 +252,20 @@ nav ul li a:hover::after{
 }
 
 #icon{
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 20px;
-    border: 2px solid #ff004f;
-    box-shadow: 0 0 25px rgba(255, 0, 79, 0.3);
+    border-radius: 50%;
+    border: 3px solid #ff004f;
+    box-shadow: 0 0 25px rgba(255, 0, 79, 0.35);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
 }
 
 #icon:hover{
-    transform: scale(1.03);
-    box-shadow: 0 0 35px rgba(255, 0, 79, 0.5);
+    transform: scale(1.04);
+    box-shadow: 0 0 35px rgba(255, 0, 79, 0.55);
 }
 
 .about-column-2{
@@ -711,19 +713,26 @@ nav ul li a:hover::after{
 }
 
 .project-image-wrapper {
-    margin-top: 20px;
-    border-radius: 8px;
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.08);
     max-width: 600px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
 }
 
 .project-img {
+    max-width: 100%;
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
     transition: transform 0.3s ease;
 }
 
@@ -1110,6 +1119,10 @@ textarea {
     color: #1e293b;
 }
 
+.light-theme #header {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(248, 250, 252, 0.95) 100%), url('images/back6.PNG');
+}
+
 .light-theme .navi {
     background-color: rgba(255, 255, 255, 0.95);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -1124,7 +1137,7 @@ textarea {
 }
 
 .light-theme nav ul li a:hover {
-    color: #0f172a;
+    color: #ff004f;
 }
 
 .light-theme .theme-toggle {
@@ -1133,10 +1146,21 @@ textarea {
     color: #334155;
 }
 
+.light-theme .theme-toggle:hover {
+    border-color: #ff004f;
+    color: #ff004f;
+    transform: scale(1.08);
+}
+
 .light-theme .hamburger-btn {
     background: rgba(0, 0, 0, 0.06);
     border-color: rgba(0, 0, 0, 0.15);
     color: #0f172a;
+}
+
+.light-theme .hamburger-btn:hover {
+    border-color: #ff004f;
+    color: #ff004f;
 }
 
 .light-theme #about {
@@ -1161,6 +1185,13 @@ textarea {
     color: #1e293b;
 }
 
+.light-theme .about-pill:hover {
+    background: rgba(255, 0, 79, 0.12);
+    border-color: #ff004f;
+    color: #ff004f;
+    transform: translateY(-2px);
+}
+
 .light-theme .experience-card,
 .light-theme .skill-category-card,
 .light-theme .coursework-card,
@@ -1172,6 +1203,19 @@ textarea {
     background: #ffffff;
     border-color: #e2e8f0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .experience-card:hover,
+.light-theme .skill-category-card:hover,
+.light-theme .coursework-card:hover,
+.light-theme .project-card:hover,
+.light-theme .education-card:hover,
+.light-theme .leadership-card:hover,
+.light-theme .certification-card:hover,
+.light-theme .activities-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(255, 0, 79, 0.18);
+    border-color: rgba(255, 0, 79, 0.45);
 }
 
 .light-theme .featured-experience,
@@ -1222,16 +1266,35 @@ textarea {
     color: #1e293b;
 }
 
-.light-theme .skill-chip:hover {
-    background: rgba(255, 0, 79, 0.1);
+.light-theme .skill-chip:hover,
+.light-theme .coursework-chip:hover {
+    background: rgba(255, 0, 79, 0.12);
     border-color: #ff004f;
     color: #ff004f;
+    transform: translateY(-2px);
+}
+
+.light-theme .tech-tag {
+    background: rgba(255, 0, 79, 0.06);
+    border-color: rgba(255, 0, 79, 0.25);
+}
+
+.light-theme .tech-tag:hover {
+    background: rgba(255, 0, 79, 0.15);
+    border-color: #ff004f;
 }
 
 .light-theme .activity-item {
     background: #f8fafc;
     border-color: #e2e8f0;
     color: #334155;
+}
+
+.light-theme .activity-item:hover {
+    background: rgba(255, 0, 79, 0.08);
+    border-color: rgba(255, 0, 79, 0.4);
+    color: #ff004f;
+    transform: translateY(-2px);
 }
 
 .light-theme .highlight-item {
@@ -1246,6 +1309,12 @@ textarea {
     color: #475569;
 }
 
+.light-theme .certification-card:hover .cert-icon-wrapper {
+    background: rgba(255, 0, 79, 0.2);
+    border-color: #ff004f;
+    transform: scale(1.05);
+}
+
 .light-theme .right input,
 .light-theme #message {
     background-color: #ffffff;
@@ -1257,6 +1326,12 @@ textarea {
 .light-theme #message:focus {
     border-color: #ff004f;
     background-color: #ffffff;
+}
+
+.light-theme .btn:hover {
+    background: #d40042;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 79, 0.4);
 }
 
 /* ===================================================
@@ -1355,19 +1430,16 @@ textarea {
         width: 100%;
     }
 
-    #header {
-        min-height: 85vh;
-        background-position: center top;
-    }
-
-    .header-text {
-        margin-top: 120px;
-    }
-
     .about-column-1,
     .about-column-2 {
         flex-basis: 100%;
         text-align: center;
+    }
+
+    #icon {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
     }
 
     .about-desc {
@@ -1392,13 +1464,52 @@ textarea {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #header {
-        min-height: 80vh;
-        background-position: center top;
-        padding-top: 65px;
+        min-height: auto;
+        padding-top: 70px;
+        padding-bottom: 45px;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center 70px;
+        background-color: #080808;
     }
-    
+
+    .light-theme #header {
+        background-color: #f8fafc;
+        background-image: url('images/back6.PNG');
+    }
+
+    .header-text {
+        margin-top: calc((100vw * 1080 / 2600) + 30px);
+        background: rgba(14, 14, 14, 0.88);
+        backdrop-filter: blur(10px);
+        padding: 22px 20px;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55);
+        display: block;
+        max-width: 100%;
+    }
+
+    .light-theme .header-text {
+        background: rgba(255, 255, 255, 0.92);
+        border-color: #e2e8f0;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .light-theme .header-text h1 {
+        color: #0f172a;
+        text-shadow: none;
+    }
+
+    .light-theme .typing-text {
+        color: #1e293b;
+        text-shadow: none;
+    }
+}
+
+@media (max-width: 600px) {
     .navi {
         padding: 10px 16px;
     }
@@ -1406,36 +1517,26 @@ textarea {
     .logo {
         font-size: 22px !important;
     }
-    
-    .header-text {
-        margin-top: 90px;
-        background: rgba(8, 8, 8, 0.7);
-        backdrop-filter: blur(8px);
-        padding: 22px 18px;
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        display: block;
-        max-width: 100%;
-    }
 
-    .light-theme .header-text {
-        background: rgba(15, 23, 42, 0.78);
-        border-color: rgba(255, 255, 255, 0.15);
+    .header-text {
+        margin-top: calc((100vw * 1080 / 2600) + 25px);
+        padding: 20px 16px;
     }
     
     .header-text h1 {
-        font-size: 25px;
+        font-size: 24px;
         margin-bottom: 8px;
     }
     
     .typing-text {
-        font-size: 17px;
+        font-size: 16.5px;
         margin-bottom: 14px;
     }
     
     #icon {
-        height: 200px;
-        width: 200px;
+        height: 190px;
+        width: 190px;
+        border-radius: 50%;
     }
     
     .sub-title {
@@ -1550,12 +1651,12 @@ textarea {
     }
 
     .header-text {
-        margin-top: 80px;
+        margin-top: calc((100vw * 1080 / 2600) + 20px);
         padding: 18px 14px;
     }
 
     .header-text h1 {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     .typing-text {
@@ -1567,8 +1668,9 @@ textarea {
     }
 
     #icon {
-        height: 170px;
-        width: 170px;
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
     }
 
     .experience-card,
